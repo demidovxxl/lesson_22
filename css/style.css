@@ -1,0 +1,67 @@
+body{
+	/* значения по умолчанию */
+	font-family: "Lato";
+	color: #424551;
+	font-size: 18px;
+	/* font-size: 16px; */
+}
+.wrapper{
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main{
+	flex-grow: 1;
+	background-color: rgb(226, 226, 226);
+}
+/* ===================================== */
+
+[class*="__container"]{
+	/* + 30px - компенсация падинга безопасности */
+	max-width: 1260px;
+	margin: 0 auto;
+	/* отступы безопасности */
+	padding: 15px 15px;
+}
+
+
+.js__container {
+}
+p:not(:last-child){
+	margin-bottom: 4px;
+}
+.js__basic {
+	background-color: #f8b992;
+	border-radius: 4px;
+	padding: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.js__basic:not(:last-child){
+	margin-bottom: 10px;
+}
+.js__title {
+	text-align: center;
+	font-weight: 700;
+	font-size: 24px;
+}
+.js__title:not(:last-child){
+	margin-bottom: 20px;
+} 
+.js__variable {
+	background-color: #daffe9;
+	border-radius: 4px;
+	padding: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.js__variable:not(:last-child){
+	margin-bottom: 10px;
+}
+.js__type {
+	background-color: #e5e0ff;
+	border-radius: 4px;
+	padding: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
